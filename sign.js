@@ -20,7 +20,7 @@ function getSign(obj){
   newStr = md5.hex_md5(newStr)
   newStr = newStr+obj['nonce_str']+obj['timestamp']+key[appkey];
   newStr = md5.hex_md5(newStr)
-  newStr = newStr.toUpperCase()
+  newStr = newStr.toLowerCase()
   return newStr
 }
 export {
