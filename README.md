@@ -9,6 +9,6 @@
 6. 转小写返回
 ## 使用方法
 1. clone 本仓库
-2. 引入sign.js进行使用
+2. 引入sign.js进行使用  
 ES6的语法 import { createNoncestr, getSign } from './sign.js'  
 ES5的语法 require('./sign.js')
