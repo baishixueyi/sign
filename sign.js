@@ -27,3 +27,8 @@ export {
   createNoncestr,
   getSign
 }
+
+module.exports = {
+  createNoncestr:createNoncestr,
+  getSign:getSign
+}
