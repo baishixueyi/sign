@@ -18,8 +18,6 @@ function getSign(obj){
   arr.sort()
   let newStr = arr.map(v=>v+'='+obj[v]).join('&')
   newStr = md5.hex_md5(newStr)
-  newStr = newStr+obj['nonce_str']+obj['timestamp']+key[appkey];
-  newStr = md5.hex_md5(newStr)
   newStr = newStr.toLowerCase()
   return newStr
 }
